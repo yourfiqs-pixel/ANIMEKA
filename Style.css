@@ -1,0 +1,120 @@
+body {
+    background-color: #1e1e2e;
+    color: white;
+    font-family: Arial, sans serif;
+    margin: 0;
+    padding: 15px;
+}
+h1 {
+    color: white;
+  text-align: left;
+  font-size: 40px;
+  margin-bottom: 8px;
+}
+h3 {
+  color: #4293f5;
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.anime-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  padding: 10px;
+  align-items: stretch;
+}
+
+.anime-item {
+  min-width: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #252a38;
+  border-radius: 10px;
+  border: 1px solid #343b4d;
+
+}
+
+.anime-item img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.anime-item p {
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: left;
+  line-height: 1.4;
+  padding: 0 8px;
+  margin: 8px 0 10px;
+  overflow-wrap: anywhere;
+}
+
+.anime-item .genre {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 0 8px 10px;
+}
+
+.anime-item .genre span {
+    display: inline-block;
+    background: #3155d9;
+    color: #ffffff;
+    font-size: 10px;
+    padding: 5px 9px;
+    border-radius: 20px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.anime-movie {
+  min-width: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #252a38;
+  border-radius: 10px;
+  border: 1px solid #343b4d;
+}
+
+.anime-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    padding: 10px;
+}
+
+.anime-movie img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.anime-movie .genre {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 0 8px 10px;
+}
+
+.anime-movie .genre span {
+  display: inline-block;
+  background: #3155d9;
+  color: #ffffff;
+  font-size: 10px;
+  padding: 5px 9px;
+  border-radius: 20px;
+  text-align: center;
+  white-space: nowrap;
+}
